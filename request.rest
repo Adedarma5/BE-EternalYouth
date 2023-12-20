@@ -1,0 +1,35 @@
+GET http://localhost:5000/users
+Authorization: Bearere eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIwLCJuYW1lIjoiQWRlIiwiZW1haWwiOiJlbWFpQGdtYWlsLmNvbSIsImlhdCI6MTcwMzAwMTM2MiwiZXhwIjoxNzAzMDg3NzYyfQ.pQTg6nQCWhd2CWzuT7bEyhJ_HzseLid_Tss5ESCCGyU
+
+
+###
+GET http://localhost:5000/Products
+
+
+###
+POST  http://localhost:5000/getProducts
+Content-Type: application/json
+
+{
+    "name": "Ade",
+    "email": "emai@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "emai@gmail.com",
+    "password": "123456"
+}
+
+
+###
+GET   http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
